@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -15,4 +15,16 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  <ul>
+    {% if paginator.previous_page %}
+      <li>
+        <a href="{% if paginator.previous_page != 1 %}/blog/page{{ paginator.previous_page }}{% endif %}/">
+          新しい記事
+        </a>
+      </li>
+    {% endif %}
+    {% if paginator.next_page %}
+      <li><a href="/blog/page{{ paginator.next_page }}/">古い記事</a></li>
+    {% endif %}
+  </ul>
 </div>
