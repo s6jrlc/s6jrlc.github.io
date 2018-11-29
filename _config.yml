@@ -8,7 +8,7 @@ name: 日本語入力の数学記号のショートカットに脱力
 # Short bio or description (displayed in the header)
 description: ここは思考と嗜好の雑多極まる僻地
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://pbs.twimg.com/profile_images/797436991033835520/dRdhaA0S.jpg
+avatar: /images/duck.png
 
 # paginate: show 5 entries per a page
 paginate: 5
