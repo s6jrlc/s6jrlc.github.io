@@ -291,18 +291,3 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-
-///// user definition /////
-sup {
-  font-size: 70%;
-  vertical-align: top;
-  position: relative;
-  top: -0.1em;
-}
-
-sub {
-  font-size: 70%;
-  vertical-align: bottom;
-  position: relative;
-  bottom: -0.1em;
-}
