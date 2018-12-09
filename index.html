@@ -18,12 +18,12 @@ layout: default
   <div align="center">
   {% if paginator.previous_page %}
     <a href="{% if paginator.previous_page != 1 %}/blog/page{{ paginator.previous_page }}{% endif %}/">
-      新しい記事≪
+      newer entries≪
     </a>
   {% endif %}
   &nbsp;
   {% if paginator.next_page %}
-    <a href="/blog/page{{ paginator.next_page }}/">≫古い記事</a>
+    <a href="/blog/page{{ paginator.next_page }}/">≫older entries</a>
   {% endif %}
   </div>
   </ul>
