@@ -15,17 +15,16 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  <div align="center">
   {% if paginator.previous_page %}
-    <div align="left">
-      <a href="{% if paginator.previous_page != 1 %}/blog/page{{ paginator.previous_page }}{% endif %}/">
-        新しい記事
-      </a>
-    </div>
+    <a href="{% if paginator.previous_page != 1 %}/blog/page{{ paginator.previous_page }}{% endif %}/">
+      新しい記事≪
+    </a>
   {% endif %}
+  &nbsp;
   {% if paginator.next_page %}
-    <div align="right">
-      <a href="/blog/page{{ paginator.next_page }}/">古い記事</a>
-    </div>
+    <a href="/blog/page{{ paginator.next_page }}/">≫古い記事</a>
   {% endif %}
+  </div>
   </ul>
 </div>
