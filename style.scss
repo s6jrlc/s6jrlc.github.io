@@ -104,6 +104,20 @@ em, i {
   font-style: italic;
 }
 
+sup {
+  font-size: 75%;
+  vertical-align: top;
+  position: relative;
+  top: -0.5em;
+}
+
+sub {
+  font-size: 75%;
+  vertical-align: bottom;
+  position: relative;
+  top: 0.5em;
+}
+
 strong, b {
   font-weight: bold;
 }
