@@ -126,6 +126,13 @@ img {
   max-width: 100%;
 }
 
+summary {
+  display: block;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
