@@ -289,25 +289,25 @@ nav {
     margin-top: 10px;
   }
 
+  .details {
+    display: inline-block;
+  }
+  #accordion.assim {
+    display: none;
+  }
+  #accordion + .details {
+    //height: 0;
+    display: none;
+  }
+  #accordion:checked + .details {
+    //height: auto;
+    display: inline-block;
+  }
+
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
   }
-}
-
-.details {
-  display: inline-block;
-}
-#accordion.assim {
-  display: none;
-}
-#accordion + .details {
-  height: 0;
-  //display: none;
-}
-#accordion:checked + .details {
-  height: auto;
-  //display: inline-block;
 }
 
 .wrapper-footer {
