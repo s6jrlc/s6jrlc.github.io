@@ -31,10 +31,6 @@ body {
   width: 100%;
 }
 
-.details {
-  display: inline-block;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -77,7 +73,7 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
@@ -297,6 +293,19 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+
+.details {
+  display: inline-block;
+}
+#accordion.assim {
+  display: none;
+}
+#accordion + .details {
+  height: 0;
+}
+#accordion:checked + .details {
+  height: auto;
 }
 
 .wrapper-footer {
