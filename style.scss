@@ -299,15 +299,15 @@ nav {
   display: inline-block;
 }
 #accordion.assim {
-  //display: none;
-}
-#accordion + .details {
-  //height: 0;
   display: none;
 }
+#accordion + .details {
+  height: 0;
+  //display: none;
+}
 #accordion:checked + .details {
-  //height: auto;
-  display: inline-block;
+  height: auto;
+  //display: inline-block;
 }
 
 .wrapper-footer {
