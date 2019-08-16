@@ -302,10 +302,12 @@ nav {
   //display: none;
 }
 #accordion + .details {
-  height: 0;
+  //height: 0;
+  display: none;
 }
 #accordion:checked + .details {
-  height: auto;
+  //height: auto;
+  display: inline-block;
 }
 
 .wrapper-footer {
