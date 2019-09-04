@@ -308,6 +308,19 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+
+  pre {
+    border: 0.1em solid $pale_grey;
+    border-radius: 0.25em;
+    background-color: $black_grey;
+    color: $offwhite;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+  }
+  code {
+    font-family: Consolas, Menlo, Monaco, 'Courier New', monospace, sans-s
+    font-size: .9em;
+  }
 }
 
 .wrapper-footer {
