@@ -310,10 +310,10 @@ nav {
   }
 
   pre {
-    border: 0.1em solid $pale_grey;
+    //border: 0.1em solid $gray;
     border-radius: 0.25em;
-    background-color: $black_grey;
-    color: $offwhite;
+    background-color: $gray;
+    color: $lightGray;
     margin: 1em 0;
     padding: 0.5em 1em;
   }
