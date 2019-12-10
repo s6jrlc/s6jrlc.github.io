@@ -28,12 +28,10 @@ layout: default
   
   <div class="link">
   {% if page.next %}
-    «
-    <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+    <a href="{{ page.next.url }}">« {{ page.next.title }}</a>
   {% endif %}
   {% if page.previous %}
-    <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-    »
+    <a href="{{ page.previous.url }}">{{ page.previous.title }} »</a>
   {% endif %}
   </div>
 
