@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 考察に楽しさを感じる立場からの考察概論
+title: 「考察は楽しい」的な考察概論
 categories: 考察 雑記
 ---
 
