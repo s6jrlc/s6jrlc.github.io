@@ -1,0 +1,59 @@
+---
+layout: post
+title: 便利さを増すCMake
+categories: 開発環境
+---
+
+つい先日、TenacityをWindows環境で自前ビルドした時に感じたんですが。  
+どんどん使いやすくなってますね。CMake。
+
+## Out-of-sourceビルドへの最適化
+
+`PROJECT_SOURCE_DIR`、平たく言えばメインとして扱うプロジェクトにおけるCMakeLists.txtのあるディレクトリで`cmake .`する(In-sourceビルド)と、そのプロジェクトをリポジトリ管理している際や、リビルドする際などで、生成されたファイルを後から削除するのが面倒です。  
+そのため`PROJECT_SOURCE_DIR`のすぐ下に作業用ディレクトリ(ボクの場合"build[env_name]"なんて命名してる)を新たに作り、そこから`cmake ..`とかしてビルドシステムを作るのが嘗てよくあったやり方でしたが。  
+これ、今はコマンド1回でできるようです。
+
+```
+$ cmake [-S] ./path/to/source -B ./path/to/build [<options>]
+```
+
+めっちゃ便利ですね。  
+それまでは
+
+```
+$ mkdir -p ./path/to/build
+$ cd ./path/to/build
+$ cmake ${PROJECT_SOURCE_DIR}
+```
+
+とかやる必要があったのを考えれば、違いは一目瞭然でしょう。  
+~~余談ながら`path/to/build`は`path/to/source`からの相対ディレクトリなのかなと一瞬思ったんですが、試したところ流石にそんな甘すぎることはなかったぜ。~~  
+ともあれ、`path/to/build`が存在しない場合はきちんと生成してくれることもあって、この方法はとにかくラクチン。
+
+## ビルドの実行とインストールまで
+
+そこから実際のビルドを行う時も、
+
+```
+$ cmake --build ./path/to/build [--config (Debug|Release|MinSizeRel|RelWithDebInfo)]
+```
+
+で環境毎に合わせてビルドを行ってくれます (これはだいぶ前から知ってたけど一緒にまとめておく) 。  
+`--config`以降については最近知った記法なんですが、IDE系の場合ビルドタイプをここで指定するのが正解みたい (Makefileなどを使う環境の場合は先のステップで変数`CMAKE_BUILD_TYPE`にビルドタイプを設定してやります) 。  
+
+あとはインストール。これもラクになってますね。
+
+```
+$ cmake --install ./path/to/build [--prefix path/to/install]
+```
+
+以前はビルドシステム生成の段階で変数`CMAKE_INSTALL_PREFIX`にインストール先を設定していたため、インストール先を変えるにはステップを遡らなければいけませんでした。  
+その手間が省けるのはもちろん、件の変数へ先に指定を行っていてもここでインストール先の上書きまで可能です。
+
+この辺りの機能、リリースされてから割と年単位で経ってるので、ボク自身追いつくのが遅かった感は否めませんが。  
+それにしても本当、楽になりましたのう。
+
+<!--
+参考資料:
+https://kamino.hatenablog.com/entry/cmake_tutorial3
+-->
