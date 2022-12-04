@@ -83,6 +83,10 @@ lainについては現在2次創作が公認されているワケですし、今
 というワケでもし宜しければ、ぜひお聞きくださいませ。  
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1395407554&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/tlcmany" title="TLC" target="_blank" style="color: #cccccc; text-decoration: none;">TLC</a> · <a href="https://soundcloud.com/tlcmany/identify-me" title="Identify Me" target="_blank" style="color: #cccccc; text-decoration: none;">Identify Me</a></div>
 
+ダウンロードはBandcampまたはBOOTHからどうぞ。
+Bandcamp: <https://tlcmany.bandcamp.com/track/identify-me>
+BOOTH: <https://tlc.booth.pm/items/4369633>
+
 ## 終わりに
 
 せっかくTTLがあるワケだしlainでももうちょっとちゃんとした2次創作がまたできたら、とは公開当初の2019年時点で既に言っていました。  
