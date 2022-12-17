@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Identify Me - lainの思想に影響を受けて今になり曲を作ってみた一個人の話
-categories: ゲーム アニメ
+categories: ゲーム アニメ 2次創作
 cover: /images/20221204_00.png
 ---
 
